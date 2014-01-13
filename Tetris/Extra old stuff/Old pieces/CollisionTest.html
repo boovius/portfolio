@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tetris</title>
+	<style type="text/css">
+		body {background: #000;}
+		#preDropBox {margin: 0 auto; width: 500px; height: 100px; background-color: white;}
+		#container {margin: 0px auto; width: 500px; height: 500px; background: #bbb; position: relative;}
+		.box {width: 50px; height: 50px; outline: solid 1px black; position: absolute;}
+
+		.fallingBlock {	
+			background: #333;
+		}
+		.block {
+			top: -50px;
+			left: 200px;
+			position: absolute;
+		}
+
+		.hitBlock {
+			background: green;
+		}
+
+		.line {background: red; }
+
+		#colLine { 
+			height: 500px; width: 1px; position: absolute; left: 0;
+		}
+
+		#rowLine { 
+			width: 500px; height: 1px; position: absolute; bottom: 0;
+		}
+
+	</style>
+
+
+
+</head>
+
+<body>
+	<div id='preDropBox'></div>
+	<div id='container'>
+
+		<!-- grid layout --> 
+
+		<!-- columns -->
+		<div id='colLine'></div>
+		<div id='colLine' class="line" style="margin-left: 50px"></div>
+		<div id='colLine' class="line" style="margin-left: 100px"></div>
+		<div id='colLine' class="line" style="margin-left: 150px"></div>
+		<div id='colLine' class="line" style="margin-left: 200px"></div>
+		<div id='colLine' class="line" style="margin-left: 250px"></div>
+		<div id='colLine' class="line" style="margin-left: 300px"></div>
+		<div id='colLine' class="line" style="margin-left: 350px"></div>
+		<div id='colLine' class="line" style="margin-left: 400px"></div>
+		<div id='colLine' class="line" style="margin-left: 450px"></div>
+
+			<!-- rows -->
+		<div id='rowLine'></div>
+		<div id='rowLine' class="line" style="margin-bottom: 50px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 100px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 150px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 200px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 250px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 300px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 350px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 400px"></div>
+		<div id='rowLine' class="line" style="margin-bottom: 450px"></div>
+
+
+		<div id='pieceID_1' class='box block fallingBlock'></div>
+
+	</div>
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+	<script type="text/javascript" src='jquery191.js'></script>
+	<script type="text/javascript" src='gameboard.js'></script>
+	<script type="text/javascript" src='movement.js'></script>
+</body>
+
+
+</html>

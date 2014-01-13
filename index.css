@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+body {
+  background-color: #aaa;
+  margin: 0;
+  font-size: 24px;
+}
+
+#landing-page {
+  background-image: url('lib/img/ghostOnBeach.jpeg');
+  background-size: 950px 100%;
+  background-repeat: no-repeat;
+  width: 950px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#wrapper {
+  width: 100%;
+
+}
+
+#landing-page header {
+  text-align: center;
+}
+
+#site-title {
+  float: left;
+  margin: 10%;
+}
+
+#jcb {
+  color: #5599cc;
+  font-size: 2em;
+}
+
+#jcb span {
+  color: #115522;
+  font-style: italic;
+  font-size: 3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#slug-line {
+  border-top: white 1px solid;
+  color: #115522;
+  width: 10em;
+}
+
+#tag-line {
+  text-align: right;
+  font-style: italic;
+  color: #555;
+}
+
+@media screen and (max-width: 950px) {
+  #landing-page {
+    width: 100%;
+    background-image: url('lib/img/ghostOnBeach.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #landing-page {
+    width: 100%;
+    background-size: 750px 100%;
+  }
+}

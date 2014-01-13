@@ -1,0 +1,420 @@
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+ul,ol {list-style:none;}
+fieldset,img,hr {border:none;}
+caption,th {text-align:left;}
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+	#footerNav{
+		bottom: 42%;
+		right: 3%;
+	}
+
+	#tagLine {
+		bottom: 25%;
+		right: 6%;
+	}
+
+	#footerNav ul li:first-child {
+		margin-right: 30px;
+	}
+
+	#landingPage{ 
+		height: 400px;
+	}
+
+	#doesWhatPage {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+	#footerNav{
+		bottom: 35%;
+		right: 3%;
+	}
+
+	#tagLine {
+		bottom: 25%;
+		right: 3%;
+	}
+
+	#footerNav ul li:first-child {
+		margin-right: 30px;
+	}
+
+	#landingPage{ 
+		height: 500px;
+	}
+
+	#doesWhatPage {
+		margin-top: 80px;
+	}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+	#footerNav{
+		bottom: 42%;
+		right: 14%;
+	}
+
+	#tagLine {
+		bottom: 42%;
+		right: 3%;
+	}
+
+	#footerNav ul li:first-child {
+		margin-right: 45px;
+	}
+
+	#landingPage{ 
+		height: 550px;
+	}
+
+	#doesWhatPage {
+		margin-top: 120px;
+	}
+
+}
+
+@media screen and (min-width: 851px) {
+	#footerNav{
+		bottom: 20%;
+		right: 21%;
+	}
+
+	#tagLine {
+		bottom: 25%;
+		right: 3%;
+	}
+
+	#footerNav ul li:first-child {
+		margin-right: 125px;
+	}
+
+	#landingPage{ 
+		height: 700px;
+	}
+
+	#doesWhatPage {
+		margin-top: 180px;
+	}
+}
+
+body {
+	overflow: scroll;
+	background-color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+.toBio {
+	cursor: pointer;
+}
+
+/*LANDING PAGE*/
+
+#landingPage {
+	background-image: url('lib/img/ghostOnBeach.jpeg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+#outerBox {
+	position: absolute;
+	top: 20px;
+	left: 8%;
+	width: 50%;
+	height: 75%;
+	overflow: hidden;
+	/*outline: 3px solid yellow;*/
+}
+
+.innerBox {
+	width: 250px;
+	height: 25%;
+	/*outline: 3px solid white;*/
+}
+
+#innerBox1 {
+	position: relative;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+#blueLetters {
+	color: #5599cc;
+	font-size: 2.5em;
+	font-style: italic;
+}
+
+#letters {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 42%;
+
+/*	outline: 3px solid orange;
+*/}
+
+#j {
+	height: 100%;
+	width: 20%;
+	text-align: left;
+	position: absolute;
+	left: 0;
+	top: 30%;
+/*	outline: 3px solid blue;
+*/}
+
+#c {
+	height: 100%;
+	width: 20%;
+	text-align: left;
+	font-size: 7em;
+	color: #115522;
+
+	position: absolute;
+	left: 20px;
+	
+/*	outline: 3px solid green;
+*/}
+
+#b{
+	text-align: right;
+	position: absolute;
+	left: 50px;
+	top: 30%;
+/*	outline: 3px solid blue;
+*/}
+
+#innerBox2 {
+	text-align: center;
+	color: #115522;
+}
+
+.slugLine {
+	font-size: 2em;
+	font-style: italic;
+}
+
+#tagLine{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	text-align: right;
+	font-size: 1.4em;
+	font-style: italic;
+	color: #555;
+
+	/*outline: 3px solid yellow;*/
+}
+
+#footerNav {	
+	width: 100%;
+	position: absolute;
+	/*outline: 3px solid white;*/
+}
+
+#footerNav span {
+	font-size: .5em;
+	font-style: italic;
+	color: #5599cc;
+}
+
+#footerNav ul {
+	width: 350px;
+	height: 30%;
+	margin: 0 auto;
+	list-style: none;
+	font-size: 1.5em;
+}
+
+#footerNav ul li {
+	float: left;
+}
+
+.controls {
+	padding: 5px 12px;
+	border-radius: 5px;
+	border: 1px solid #bbb;	
+}
+
+.controls:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+#footerNav ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+
+/*DOES WHAT PAGE*/
+
+#doesWhatPage {
+	background-color: white;
+	height: 100%;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+#doesWhatPage h2 {
+	margin-left: 50px;
+	padding-top: 20px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 1.4em;
+
+}
+
+#doesWhatPage h1 {
+	margin-left: 50px;
+	padding-top: 20px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 3em;
+	margin-left: 10px;
+}
+
+#doesWhatPage span {
+	font-weight: bold;
+}
+
+#doesWhatHeader {
+	margin-left: 50px;
+	width: 36%;	
+	border-bottom: 2px solid #FF4D4D;
+}
+
+#doesWhatHeader span {
+	font-size: .3em;
+	font-weight: normal;
+}
+
+#git {
+	height: 40px;
+	width: 50px;
+}
+
+
+#doesWhatPage ul {
+	margin-left: 5%;
+	margin-bottom: 3%;
+	list-style: none;
+}
+
+#doesWhatPage li {
+	display: inline-block;
+	background: #ddd;
+	padding: 7px;
+	border-radius: 2px;
+	margin-top: 20px; 
+	margin-right: 20px;
+}
+
+#doesWhatPage li:hover {
+	background: #ccc;
+}
+
+#doesWhatPage li div {
+	display: inline-block;
+}
+
+.thumb img {
+	height: 100px;
+	width: 100px;
+	margin-right: 20px;
+}
+
+.workDescrip {
+	width: 250px;
+	margin-right: 60px;
+}
+
+
+/*IS WHO PAGE*/
+
+#isWhoPage {
+	background-color: black;
+	height: 650px;
+	position: relative;
+	margin-top: 100px;
+}
+
+#isWhoPage h1 {
+	color: white;
+	margin-left: 50px;
+	padding-top: 20px;
+}
+
+#isWhoPage h1, h2 {
+	margin-left: 50px;
+	padding-top: 20px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 2em;
+
+}
+
+#isWhoPage h1 {
+	font-size: 3em;
+}
+
+
+#WhoContent {
+	width: 60%;
+	margin-left: 10%;
+	overflow: auto;
+	background-color: #111;
+	padding: 25px;
+	border-radius: 5px;
+
+	/*outline: 2px white solid;*/
+}
+
+#bioPic img {
+	height: 100px;
+	float: left;
+	margin-right: 20px;
+
+/*	outline: 3px solid blue;
+*/
+}
+
+#bio {
+	clear: right;
+	width: 500px;
+}
+
+#isWhoPage p {
+	color: white;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+#WhoContent ul {
+	list-style: none;
+}
+
+#WhoContent ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+#WhoContent ul li a {
+	color: #768;
+	font-style: italic;
+}
+
+#WhoContent ul li a:hover {
+	color: #968;
+}
